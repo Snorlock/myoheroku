@@ -1,0 +1,15 @@
+{
+  "name": "myoheroku",
+  "version": "1.0.0",
+  "description": "For displaying myo events online",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Snorrre Lothar von Gohren Edwin <snorre.edwin@gmail.com> (https://github.com/Snorlock)",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "firebase": "^2.2.3"
+  }
+}
