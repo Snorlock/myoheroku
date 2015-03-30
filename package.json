@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "browserify": "^9.0.3",
+    "express": "^4.12.3",
     "firebase": "^2.2.3"
   }
 }
