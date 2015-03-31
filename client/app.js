@@ -11,10 +11,13 @@ var Frontpage = React.createClass({
 	},
 	componentDidMount: function() {
 		var that = this;
-		plantRef = new Firebase('https://mymyo.firebaseio.com/pose');
-		plantRef.on("value", function(snapshot) {
+		myoRef = new Firebase('https://mymyo.firebaseio.com/pose');
+		myoRef.on("value", function(snapshot) {
 			that.setState({pose:snapshot.val()});
 		});
+	},
+	componentWillUnmount: function() {
+		myoRef.off();
 	}
 });
 
